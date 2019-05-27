@@ -8,13 +8,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+class ViewController: UIViewController
+{
+    var recipeData = recipeClass()
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("recipe app")
+        for i in recipeData.arrayRecipeName {
+            print(i)
+        }
     }
-
-
 }
 
