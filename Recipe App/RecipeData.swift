@@ -11,5 +11,5 @@ import Foundation
 class recipeClass
 {
     var arrayRecipeName = ["a","b","c","d"]
-    
+    var arrayRecipeImage = ["kerala","masala","putt","fish"]
 }
