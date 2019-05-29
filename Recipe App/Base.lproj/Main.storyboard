@@ -76,31 +76,7 @@
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uby-2b-FAl">
                                 <rect key="frame" x="0.0" y="78" width="320" height="441"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7UJ-fV-QVy">
-                                        <rect key="frame" x="96" y="4" width="128" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="15M-kh-r62"/>
-                                            <constraint firstAttribute="width" constant="128" id="zYP-Am-7av"/>
-                                        </constraints>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ktt-Bs-2ak">
-                                        <rect key="frame" x="4" y="136" width="312" height="301"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.55227157140000005" blue="0.49718949470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="Ktt-Bs-2ak" firstAttribute="top" secondItem="7UJ-fV-QVy" secondAttribute="bottom" constant="4" id="A0f-CN-Ore"/>
-                                    <constraint firstAttribute="bottom" secondItem="Ktt-Bs-2ak" secondAttribute="bottom" constant="4" id="FpY-VX-CPI"/>
-                                    <constraint firstItem="7UJ-fV-QVy" firstAttribute="top" secondItem="uby-2b-FAl" secondAttribute="top" constant="4" id="GD5-Ak-WLt"/>
-                                    <constraint firstItem="7UJ-fV-QVy" firstAttribute="centerX" secondItem="uby-2b-FAl" secondAttribute="centerX" id="fOM-bR-TPu"/>
-                                    <constraint firstItem="Ktt-Bs-2ak" firstAttribute="leading" secondItem="uby-2b-FAl" secondAttribute="leading" constant="4" id="omn-As-toO"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ktt-Bs-2ak" secondAttribute="trailing" constant="4" id="x56-Gh-Azc"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.55227157140000005" blue="0.49718949470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -122,10 +98,8 @@
                     <tabBarItem key="tabBarItem" title="Item" id="OI2-RG-p26"/>
                     <connections>
                         <outlet property="btnBack" destination="0wp-zd-1Hb" id="Wcw-tD-xxR"/>
-                        <outlet property="imageViewRecipe" destination="7UJ-fV-QVy" id="CYF-BK-dNw"/>
                         <outlet property="navigationTitle" destination="a9P-en-QgT" id="Rpn-Zx-CaK"/>
                         <outlet property="tableViewRecipe" destination="FXO-mE-geK" id="EZg-0W-6SY"/>
-                        <outlet property="textViewRecipe" destination="Ktt-Bs-2ak" id="caK-NV-saD"/>
                         <outlet property="viewRecipeDetails" destination="uby-2b-FAl" id="PSR-hb-wuQ"/>
                     </connections>
                 </viewController>

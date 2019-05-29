@@ -7,18 +7,18 @@
 //
 
 import UIKit
+import WebKit
 
 class ViewController: UIViewController
 {
     var recipeData = recipeClass()
     let navTitle = "Recipe"
+    var webView = WKWebView()
     
     @IBOutlet weak var navigationTitle: UINavigationItem!
     @IBOutlet weak var tableViewRecipe: UITableView!
     @IBOutlet weak var viewRecipeDetails: UIView!
     @IBOutlet weak var btnBack: UIBarButtonItem!
-    @IBOutlet weak var imageViewRecipe: UIImageView!
-    @IBOutlet weak var textViewRecipe: UITextView!
     
     override func viewDidLoad()
     {
@@ -27,16 +27,12 @@ class ViewController: UIViewController
         navigationTitle.title = navTitle
         title = navTitle
         
-        funcImageViewShape()
-        
         //table cell height change
         tableViewRecipe.rowHeight = 80
         
         viewRecipeDetails.isHidden = true
         btnBack.isEnabled = false
         btnBack.tintColor = .clear
-        
-        
     }
     
     //back button
@@ -48,14 +44,6 @@ class ViewController: UIViewController
 
 extension ViewController
 {
-    //change imageview shape
-    func funcImageViewShape()
-    {
-        imageViewRecipe.layer.cornerRadius = 20//cellImg.frame.size.width/2
-        imageViewRecipe.clipsToBounds = true
-        imageViewRecipe.layer.borderWidth = 3.0
-    }
-    
     //back button action
     func funcaAtionBtnBack()
     {
@@ -67,6 +55,7 @@ extension ViewController
         }
         else
         {
+            webView.removeFromSuperview()
             navigationTitle.title = navTitle
             btnBack.isEnabled = false
             btnBack.tintColor = .clear
@@ -78,8 +67,19 @@ extension ViewController
     func funcRecipeDetail(id: Int)
     {
         navigationTitle.title = recipeData.arrayRecipeName[id]
-        imageViewRecipe.image = UIImage(named: recipeData.arrayRecipeImage[id])
-        print("***",recipeData.arrayRecipeName[id], recipeData.arrayRecipeImage[id])
+        if let pdfURL = Bundle.main.url(forResource: recipeData.arrayRecipeName[id], withExtension: "pdf", subdirectory: nil, localization: nil)
+        {
+            do {
+                let data = try Data(contentsOf: pdfURL)
+                webView = WKWebView(frame: CGRect(x:0,y:0,width:view.frame.size.width, height:view.frame.size.height))
+                webView.load(data, mimeType: "application/pdf", characterEncodingName:"", baseURL: pdfURL.deletingLastPathComponent())
+                viewRecipeDetails.addSubview(webView)
+                
+            }
+            catch {
+                // catch errors here
+            }
+        }
     }
 }
 
@@ -99,7 +99,7 @@ extension ViewController: UITableViewDataSource
         cellTextLabel.text = recipeData.arrayRecipeName[indexPath.row]
         
         let cellImage = cell.contentView.viewWithTag(2) as! UIImageView
-        cellImage.image = UIImage(named: recipeData.arrayRecipeImage[indexPath.row])
+        cellImage.image = UIImage(named: recipeData.arrayRecipeName[indexPath.row])
         
         //cell imageview shape change
         cellImage.layer.cornerRadius = 20//cellImg.frame.size.width/2

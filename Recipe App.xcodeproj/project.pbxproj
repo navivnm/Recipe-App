@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D800F85229EF6A800FFC7C5 /* Vegetable Stew.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6D800F84229EF6A800FFC7C5 /* Vegetable Stew.pdf */; };
+		6D800F87229EF70100FFC7C5 /* Appam Recipe.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6D800F86229EF70100FFC7C5 /* Appam Recipe.pdf */; };
+		6D800F89229EFA7100FFC7C5 /* Red Coconut Chutney.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6D800F88229EFA7100FFC7C5 /* Red Coconut Chutney.pdf */; };
+		6D800F8D229EFB7F00FFC7C5 /* Beetroot Thoran.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6D800F8C229EFB7E00FFC7C5 /* Beetroot Thoran.pdf */; };
+		6D800F8F229EFBDE00FFC7C5 /* Malabar Paratha.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6D800F8E229EFBDE00FFC7C5 /* Malabar Paratha.pdf */; };
+		6D800F91229EFC2A00FFC7C5 /* Ulli Theeyal.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6D800F90229EFC2900FFC7C5 /* Ulli Theeyal.pdf */; };
+		6D800F93229EFC7600FFC7C5 /* Kootu Curry.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6D800F92229EFC7600FFC7C5 /* Kootu Curry.pdf */; };
+		6D800F95229EFD4A00FFC7C5 /* Sambar Kerala Style.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6D800F94229EFD4A00FFC7C5 /* Sambar Kerala Style.pdf */; };
 		6D9CBF47229B8F70000E8AE1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9CBF46229B8F70000E8AE1 /* AppDelegate.swift */; };
 		6D9CBF49229B8F70000E8AE1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9CBF48229B8F70000E8AE1 /* ViewController.swift */; };
 		6D9CBF4C229B8F70000E8AE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D9CBF4A229B8F70000E8AE1 /* Main.storyboard */; };
@@ -35,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D800F84229EF6A800FFC7C5 /* Vegetable Stew.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Vegetable Stew.pdf"; path = "../../../../../../Volumes/VMware Shared Folders/Vmware Share/Vegetable Stew.pdf"; sourceTree = "<group>"; };
+		6D800F86229EF70100FFC7C5 /* Appam Recipe.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Appam Recipe.pdf"; path = "../../../../../../Volumes/VMware Shared Folders/Vmware Share/Appam Recipe.pdf"; sourceTree = "<group>"; };
+		6D800F88229EFA7100FFC7C5 /* Red Coconut Chutney.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Red Coconut Chutney.pdf"; sourceTree = "<group>"; };
+		6D800F8C229EFB7E00FFC7C5 /* Beetroot Thoran.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Beetroot Thoran.pdf"; sourceTree = "<group>"; };
+		6D800F8E229EFBDE00FFC7C5 /* Malabar Paratha.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Malabar Paratha.pdf"; sourceTree = "<group>"; };
+		6D800F90229EFC2900FFC7C5 /* Ulli Theeyal.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Ulli Theeyal.pdf"; sourceTree = "<group>"; };
+		6D800F92229EFC7600FFC7C5 /* Kootu Curry.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Kootu Curry.pdf"; sourceTree = "<group>"; };
+		6D800F94229EFD4A00FFC7C5 /* Sambar Kerala Style.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Sambar Kerala Style.pdf"; sourceTree = "<group>"; };
 		6D9CBF43229B8F70000E8AE1 /* Recipe App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Recipe App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D9CBF46229B8F70000E8AE1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D9CBF48229B8F70000E8AE1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +115,14 @@
 		6D9CBF45229B8F70000E8AE1 /* Recipe App */ = {
 			isa = PBXGroup;
 			children = (
+				6D800F94229EFD4A00FFC7C5 /* Sambar Kerala Style.pdf */,
+				6D800F84229EF6A800FFC7C5 /* Vegetable Stew.pdf */,
+				6D800F88229EFA7100FFC7C5 /* Red Coconut Chutney.pdf */,
+				6D800F86229EF70100FFC7C5 /* Appam Recipe.pdf */,
+				6D800F8C229EFB7E00FFC7C5 /* Beetroot Thoran.pdf */,
+				6D800F92229EFC7600FFC7C5 /* Kootu Curry.pdf */,
+				6D800F90229EFC2900FFC7C5 /* Ulli Theeyal.pdf */,
+				6D800F8E229EFBDE00FFC7C5 /* Malabar Paratha.pdf */,
 				6D9CBF46229B8F70000E8AE1 /* AppDelegate.swift */,
 				6D9CBF48229B8F70000E8AE1 /* ViewController.swift */,
 				6D9CBF74229B99D1000E8AE1 /* RecipeData.swift */,
@@ -235,8 +259,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D800F87229EF70100FFC7C5 /* Appam Recipe.pdf in Resources */,
+				6D800F89229EFA7100FFC7C5 /* Red Coconut Chutney.pdf in Resources */,
+				6D800F93229EFC7600FFC7C5 /* Kootu Curry.pdf in Resources */,
+				6D800F8D229EFB7F00FFC7C5 /* Beetroot Thoran.pdf in Resources */,
 				6D9CBF51229B8F75000E8AE1 /* LaunchScreen.storyboard in Resources */,
 				6D9CBF4E229B8F75000E8AE1 /* Assets.xcassets in Resources */,
+				6D800F91229EFC2A00FFC7C5 /* Ulli Theeyal.pdf in Resources */,
+				6D800F8F229EFBDE00FFC7C5 /* Malabar Paratha.pdf in Resources */,
+				6D800F95229EFD4A00FFC7C5 /* Sambar Kerala Style.pdf in Resources */,
+				6D800F85229EF6A800FFC7C5 /* Vegetable Stew.pdf in Resources */,
 				6D9CBF4C229B8F70000E8AE1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
