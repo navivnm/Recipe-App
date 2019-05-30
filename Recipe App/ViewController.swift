@@ -26,7 +26,7 @@ class ViewController: UIViewController
         // Do any additional setup after loading the view, typically from a nib.
         navigationTitle.title = navTitle
         title = navTitle
-        
+        print("okk")
         //table cell height change
         tableViewRecipe.rowHeight = 80
         
